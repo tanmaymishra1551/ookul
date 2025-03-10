@@ -1,4 +1,3 @@
-// src/components/FileUpload.jsx
 import { useState } from "react";
 import { DOMParser } from "xmldom"; // For XML parsing
 import { kml } from "@tmcw/togeojson"; // Converts KML to GeoJSON
@@ -35,9 +34,17 @@ const FileUpload = ({ setGeoJsonData, setSummary }) => {
     };
 
     return (
-        <div>
-            <input type="file" accept=".kml" onChange={handleFileUpload} />
-            {fileName && <p>Uploaded: {fileName}</p>}
+        <div className="flex flex-col items-center p-4 border border-gray-300 rounded-lg shadow-md bg-white">
+            <label className="cursor-pointer bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                Upload KML File
+                <input 
+                    type="file" 
+                    accept=".kml" 
+                    onChange={handleFileUpload} 
+                    className="hidden"
+                />
+            </label>
+            {fileName && <p className="mt-2 text-gray-700">Uploaded: {fileName}</p>}
         </div>
     );
 };

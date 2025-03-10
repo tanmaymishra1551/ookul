@@ -1,12 +1,31 @@
-# React + Vite
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is designed for Full Stack Developers to demonstrate handling geospatial data. It allows users to:
+- Upload and read KML files.
+- Visualize KML elements on a map (using a tile provider such as OpenStreetMap, Google Maps, or Leaflet.js).
+- Generate a summary table with counts of different element types.
+- View detailed information showing each element type along with the total length for line-based features (e.g., Lines, LineStrings, MultiLineStrings).
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **KML File Upload**: Users can easily upload a KML file which is parsed and displayed.
+- **Summary View**: A button to generate and display a table with counts of each KML element type.
+- **Detailed View**: A button to reveal element types with calculated total lengths for line-related elements.
+- **Map Integration**: Visual representation of KML elements on a map tile for enhanced spatial context.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, JavaScript, HTML, CSS
+- **Mapping**: Map providers OpenStreetMap
+- **KML Parsing**: JavaScript libraries for parsing KML files
+
+## Setup and Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/react-kml-viewer.git
+   cd react-kml-viewer
+   npm install
+
+
+
