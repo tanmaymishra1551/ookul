@@ -1,6 +1,17 @@
-// src/components/MapComponent.jsx
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+
+// Import marker images from public folder
+import markerIcon from "/marker-icon.png";
+import markerShadow from "/marker-shadow.png";
+
+// Fix Leaflet default icon issue
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+});
 
 const MapComponent = ({ geoJsonData }) => {
     return (
