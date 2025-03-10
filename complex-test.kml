@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Complex Test KML</name>
+    <Folder>
+      <name>Test Lines</name>
+      <Placemark>
+        <name>Line 1</name>
+        <LineString>
+          <coordinates>
+            -122.0822035425683,37.42228990140251,0 
+            -122.085000,37.422000,0 
+            -122.086000,37.421000,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Line 2</name>
+        <LineString>
+          <coordinates>
+            -122.080000,37.420000,0 
+            -122.081000,37.421000,0 
+            -122.082000,37.422000,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Test MultiLines</name>
+      <Placemark>
+        <name>MultiLine 1</name>
+        <MultiGeometry>
+          <LineString>
+            <coordinates>
+              -122.083000,37.422000,0 
+              -122.084000,37.423000,0
+            </coordinates>
+          </LineString>
+          <LineString>
+            <coordinates>
+              -122.085000,37.424000,0 
+              -122.086000,37.425000,0
+            </coordinates>
+          </LineString>
+        </MultiGeometry>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Other Features</name>
+      <Placemark>
+        <name>Simple Point</name>
+        <Point>
+          <coordinates>-122.083000,37.422000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Simple Polygon</name>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <coordinates>
+                -122.0822035425683,37.42228990140251,0 
+                -122.083000,37.422000,0 
+                -122.084000,37.423000,0 
+                -122.0822035425683,37.42228990140251,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
